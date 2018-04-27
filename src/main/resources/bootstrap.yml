@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: @project.artifactId@@env@
+    cloud:
+        consul:
+            host: consul.iishoni.com
+            discovery:
+                instance-id: ${spring.application.name}
+
+server:
+    port: 8001
