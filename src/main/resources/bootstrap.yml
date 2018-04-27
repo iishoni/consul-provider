@@ -8,4 +8,4 @@ spring:
                 instance-id: ${spring.application.name}
 
 server:
-    port: 8001
+    port: 10000

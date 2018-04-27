@@ -19,4 +19,4 @@ pipeline:
       - /data:/data
       - /var/run/docker.sock:/var/run/docker.sock
     commands:
-      - sh /data/shell/setup.sh consul-provider 8001
+      - sh /data/shell/setup.sh consul-provider 10000
