@@ -10,4 +10,4 @@ spring:
                 ip-address: www.iishoni.com
 
 server:
-    port: 8001
+    port: 8881
