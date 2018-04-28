@@ -7,7 +7,7 @@ spring:
             discovery:
                 instance-id: ${spring.application.name}
                 prefer-ip-address: true
-                ip-address: 120.78.150.87
+                ip-address: www.iishoni.com
 
 server:
-    port: 10000
+    port: 8001
