@@ -1,3 +1,6 @@
+server:
+    port: 8881
+
 spring:
     application:
         name: @project.artifactId@@env@
@@ -5,9 +8,11 @@ spring:
         consul:
             host: consul.iishoni.com
             discovery:
-                instance-id: ${spring.application.name}
                 prefer-ip-address: true
-                ip-address: www.iishoni.com
-
-server:
-    port: 8881
+                instance-id: ${spring.application.name}
+#                ip-address: www.iishoni.com
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://mysql.iishoni.com:3306/test
+        username: root
+        password: root
