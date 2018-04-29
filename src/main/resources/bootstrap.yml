@@ -13,6 +13,6 @@ spring:
 #                ip-address: www.iishoni.com
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://mysql.iishoni.com:3306/test
+        url: jdbc:mysql://mysql.iishoni.com:3306/test?useUnicode=true&characterEncoding=utf8&useTimezone=true&serverTimezone=CTT&useSSL=false&allowMultiQueries=true
         username: root
         password: root
