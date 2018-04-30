@@ -26,6 +26,7 @@
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
 
+        <!-- 依赖服务api -->
         <dependency>
             <groupId>com.iishoni</groupId>
             <artifactId>consul-provider-api</artifactId>
