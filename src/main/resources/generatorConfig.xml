@@ -37,7 +37,7 @@
 
 		<!-- 生成DAO的包名和位置 -->
 		<javaClientGenerator type="XMLMAPPER"
-							 targetPackage="com.iishoni.mapper"
+							 targetPackage="com.iishoni.consulprovider.mapper"
 							 targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>

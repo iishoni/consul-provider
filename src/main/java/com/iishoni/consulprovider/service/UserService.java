@@ -1,9 +1,9 @@
-package com.iishoni.service;
+package com.iishoni.consulprovider.service;
 
 import com.github.pagehelper.PageHelper;
-import com.iishoni.mapper.UserMapper;
+import com.iishoni.consulprovider.mapper.UserMapper;
 import com.iishoni.model.User;
-import com.iishoni.springboot.web.model.Page;
+import com.iishoni.web.view.Page;
 
 import org.springframework.stereotype.Service;
 

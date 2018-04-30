@@ -25,5 +25,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.iishoni</groupId>
+            <artifactId>consul-provider-api</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 </project>

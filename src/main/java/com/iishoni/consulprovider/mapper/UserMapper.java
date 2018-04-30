@@ -1,4 +1,4 @@
-package com.iishoni.mapper;
+package com.iishoni.consulprovider.mapper;
 
 import com.iishoni.model.User;
 

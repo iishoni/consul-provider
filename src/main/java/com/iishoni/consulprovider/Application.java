@@ -1,4 +1,4 @@
-package com.iishoni;
+package com.iishoni.consulprovider;
 
 import com.spring4all.swagger.EnableSwagger2Doc;
 
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ImportResource;
 @EnableHystrix
 @EnableFeignClients
 @EnableSwagger2Doc
-@MapperScan("com.iishoni.mapper")
+@MapperScan("com.iishoni.consulprovider.mapper")
 @ImportResource("classpath*:spring-context.xml")
 public class Application {
 
