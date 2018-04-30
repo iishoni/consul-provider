@@ -6,8 +6,8 @@ Configuration:
       - name: log.level
         value: debug
       - name: log.path
-#        value: /app/cloud/logs/
-        value: D:\logs
+        value: /app/cloud/logs/
+#        value: D:\logs
       - name: project.name
         value: consul-provider
       - name: log.pattern
