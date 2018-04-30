@@ -1,4 +1,4 @@
 swagger:
-    base-package: com.iishoni
+    base-package: com.iishoni.*.web
     base-path: /**
     exclude-path: /error
