@@ -52,6 +52,6 @@ Configuration:
         level: info
       - name: org.apache.http
         level: info
-      - name: com.zaxxer.hikari.pool
+      - name: com.zaxxer.hikari
         level: info
 
