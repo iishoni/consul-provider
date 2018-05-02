@@ -27,17 +27,17 @@ Configuration:
       PatternLayout:
         pattern: ${log.pattern}
     RollingFile: # 输出到文件，超过128MB归档
-      - name: ROLLING_FILE
-        ignoreExceptions: false
-        fileName: ${log.path}/${project.name}.log
-        filePattern: ${log.file.pattern}
-        PatternLayout:
-          pattern: ${log.pattern}
-        Policies:
-          SizeBasedTriggeringPolicy:
-            size: "128 MB"
-        DefaultRolloverStrategy:
-          max: 100 # 最多同一文件夹下的文件数
+      name: ROLLING_FILE
+      ignoreExceptions: false
+      fileName: ${log.path}/${project.name}.log
+      filePattern: ${log.file.pattern}
+      PatternLayout:
+        pattern: ${log.pattern}
+      Policies:
+        SizeBasedTriggeringPolicy:
+          size: "128 MB"
+      DefaultRolloverStrategy:
+        max: 100 # 最多同一文件夹下的文件数
 
   Loggers:
     Root:
@@ -45,3 +45,9 @@ Configuration:
       AppenderRef:
         - ref: CONSOLE
         - ref: ROLLING_FILE
+    Logger:
+      name: org.springframework.cloud.consul
+      level: info
+    Logger:
+      name: com.ecwid.consul
+      level: info
