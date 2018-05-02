@@ -48,3 +48,6 @@ Configuration:
     Logger:
       name: org.apache.http
       level: warn
+    Looger:
+      name: com.zaxxer.hikari.pool
+      level: info
