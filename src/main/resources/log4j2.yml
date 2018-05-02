@@ -46,8 +46,5 @@ Configuration:
         - ref: CONSOLE
         - ref: ROLLING_FILE
     Logger:
-      name: org.springframework.cloud.consul
-      level: info
-    Logger:
-      name: com.ecwid.consul
-      level: info
+      name: org.apache.http
+      level: warn
