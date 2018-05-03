@@ -26,7 +26,9 @@ public class Application {
         Properties props = System.getProperties();
         for (Object o : props.keySet()) {
             String key = (String) o;
-            System.out.println(key + " = " + props.get(key));
+            if ("user.timezone".equals(key)) {
+                System.out.println("===============================================================================" + key + " : " + props.get(key));
+            }
         }
     }
 
