@@ -9,6 +9,9 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ImportResource;
 
+import java.util.Iterator;
+import java.util.Properties;
+
 @SpringCloudApplication
 @EnableHystrix
 @EnableFeignClients
@@ -19,6 +22,12 @@ public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
+
+        Properties props = System.getProperties();
+        for (Object o : props.keySet()) {
+            String key = (String) o;
+            System.out.println(key + " = " + props.get(key));
+        }
     }
 
 }
