@@ -2,6 +2,7 @@ package com.iishoni.consulprovider;
 
 import com.spring4all.swagger.EnableSwagger2Doc;
 
+import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
@@ -18,6 +19,7 @@ import java.util.Properties;
 @EnableSwagger2Doc
 @MapperScan("com.iishoni.consulprovider.mapper")
 @ImportResource("classpath*:spring-context.xml")
+@Slf4j
 public class Application {
 
     public static void main(String[] args) {
@@ -27,7 +29,7 @@ public class Application {
         for (Object o : props.keySet()) {
             String key = (String) o;
             if ("user.timezone".equals(key)) {
-                System.out.println("===============================================================================" + key + " : " + props.get(key));
+                log.info("===============================================================================" + key + " : " + props.get(key));
             }
         }
     }
